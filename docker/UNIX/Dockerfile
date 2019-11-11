@@ -6,7 +6,8 @@ FROM openjdk:${OPENJDK_TAG}
 MAINTAINER Seongjin Park
 
 ARG SBT_VERSION=1.2.8
-ENV HOME=/Users/seongjinpark/research/CLU/research/geo_project/identification
+ENV HOME=/Users/seongjinpark/research/CLU/research/geo_project/
+ENV GEO_PATH=${HOME}/geoscience
 
 # Install sbt
 RUN \
@@ -18,4 +19,7 @@ RUN \
   sbt sbtVersion
 
 WORKDIR ${HOME}
+RUN git clone https://github.com/seongjinpark-88/geoscience.git
+WORKDIR ${GEO_PATH}
+RUN git fetch && git checkout
 
