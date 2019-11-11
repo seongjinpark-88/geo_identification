@@ -1,0 +1,6 @@
+Site 397	Africa	76
+IODP Site U1341	Bering Sea	54
+Site U1341	Bowers Ridge	30
+DSDP Site 216	Kerguelen	52
+IODP Site 1340	Bering Sea	57
+IODP Site U1340	Bering Sea	17
